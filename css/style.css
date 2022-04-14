@@ -534,7 +534,7 @@ footer {
 .company ul {
     list-style: none;
 }
-.company ul li a:visited, .company ul li a {
+.company ul li a:visited{
 
     color: #ffffff;
     text-decoration: none;
