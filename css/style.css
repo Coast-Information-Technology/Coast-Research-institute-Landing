@@ -544,7 +544,7 @@ footer {
     color: #ffffff;
 }
 
-.contact p {
+#contact p {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -553,10 +553,10 @@ footer {
     color: #ffffff;
 }
 
-.contact ul {
+#contact ul {
     list-style: none;
 }
-.contact ul li {
+#contact ul li {
     margin-top: 20px;
     font-family: Poppins;
     font-style: normal;
@@ -566,7 +566,7 @@ footer {
     color: #ffffff;
 }
 
-.contact i {
+#contact i {
     margin-right: 10px;
 }
 
