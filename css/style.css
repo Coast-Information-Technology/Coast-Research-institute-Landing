@@ -556,7 +556,7 @@ footer {
 .contact ul {
     list-style: none;
 }
-.contact ul li {
+#contact ul li {
     margin-top: 20px;
     font-family: Poppins;
     font-style: normal;
