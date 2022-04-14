@@ -534,6 +534,10 @@ footer {
 .company ul {
     list-style: none;
 }
+.company ul li a:visited {
+
+    color: #ffffff;
+}
 .company ul li {
     margin-top: 20px;
     font-family: Poppins;
