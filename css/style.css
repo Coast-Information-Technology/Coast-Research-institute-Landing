@@ -553,7 +553,7 @@ footer {
     color: #ffffff;
 }
 
-.contact ul {
+.contact ul, #contact ul {
     list-style: none;
 }
 #contact ul li {
