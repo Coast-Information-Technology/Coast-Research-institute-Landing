@@ -566,7 +566,7 @@ footer {
     color: #ffffff;
 }
 
-.contact i {
+.contact i, #contact i {
     margin-right: 10px;
 }
 
