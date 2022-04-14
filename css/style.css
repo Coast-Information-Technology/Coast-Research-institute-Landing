@@ -341,7 +341,7 @@ body {
     text-align: justify;
 }
 
-.services_content_card_text button {
+.services_content_card_text a {
     border: none;
     background: linear-gradient(90deg, #35203b -118.5%, #500480 100%);
     border-radius: 8px;
