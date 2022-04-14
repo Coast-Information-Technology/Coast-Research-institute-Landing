@@ -537,6 +537,8 @@ footer {
 .company ul li a:visited {
 
     color: #ffffff;
+    text-decoration: none;
+
 }
 .company ul li {
     margin-top: 20px;
