@@ -1,225 +1,225 @@
 @font-face {
-    font-family: Poppins;
-    src: url(../font/Poppins-Regular.ttf);
+  font-family: Poppins;
+  src: url(../font/Poppins-Regular.ttf);
 }
 #header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 100px;
+  transition: 0.6s;
+  background-color: #ffffff;
+}
+
+#header.sticky {
+  background: #000000;
+  padding: 5px 100px;
+}
+#header.sticky a {
+  color: #000000 !important;
+}
+
+#header .brand {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#header.sticky .imagelogo_container {
+  background: url(../images/coastresearch.svg);
+  background-position: center;
+  background-size: contain;
+  /* // width: 168px;
+    // height: 57px; */
+  background-repeat: no-repeat;
+}
+
+.imagelogo_container {
+  background: url(../images/coastresearch.svg);
+  /* // background-size: cover; */
+  background-position: center;
+  width: 168px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* // width: 168px;
+    // height: 57px; */
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+#header .menu {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-left: 60px;
+  width: 100%;
+}
+
+#header .menu .link_container a {
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: #000000;
+}
+
+#header .menu .link_container a:hover {
+  color: #500480;
+}
+
+#header .btn {
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.apply_now_btn {
+  background: #0072b9 !important;
+  border-radius: 5px !important;
+  padding: 10px 30px !important;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.contact_us_btn {
+  background: #ffffff !important;
+  border-radius: 5px !important;
+  padding: 10px 30px !important;
+  color: #0072b9 !important;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1060px) {
+  #header {
     z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    /* // width: 100%; */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 100px;
+    padding: 10px 30px;
     transition: 0.6s;
-    background-color: #ffffff;
-}
-
-#header.sticky {
-    background: #000000;
-    padding: 5px 100px;
-}
-#header.sticky a {
+    background: #ffffff;
+  }
+  #header.sticky {
+    background: #2c2f5b;
+    padding: 5px 10px;
+    padding-right: 20px;
+  }
+  #header.sticky a {
     color: #000000 !important;
-}
-
-#header .brand {
-    color: #000;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-#header.sticky .imagelogo_container {
-    background: url(../images/coastresearch.svg);
-    background-position: center;
-    background-size: contain;
-    /* // width: 168px;
-    // height: 57px; */
-    background-repeat: no-repeat;
-}
-
-.imagelogo_container {
-    background: url(../images/coastresearch.svg);
+    margin-top: 30px;
+  }
+  .imagelogo_container {
+    background: url(../images/assuredlogodark.svg);
     /* // background-size: cover; */
     background-position: center;
     width: 168px;
-    height: 40px;
+    height: 57px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     /* // width: 168px;
-    // height: 57px; */
+        // height: 57px; */
     background-repeat: no-repeat;
-    margin-top: 10px;
-}
+    margin-top: 0px;
+  }
 
-#header .menu {
-    position: relative;
+  #header.sticky .imagelogo_container {
+    background: url(../images/Libertylogo.svg);
+    background-position: center;
+    background-size: contain;
+    /* // width: 168px;
+        // height: 57px; */
+    background-repeat: no-repeat;
+  }
+
+  #header .btn {
+    display: block;
+  }
+
+  #header .menu {
+    position: fixed;
+    background: #ececea;
+    flex-direction: column;
+    min-width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 0px 50px;
+    transition: 0.5s;
+    transition-property: right;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
     width: 100%;
-}
+  }
 
-#header .menu .link_container a {
+  #header .menu.active {
+    right: 0;
+  }
+
+  #header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    color: #000000be;
+  }
+
+  #header .menu a {
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+    color: #000000be;
+  }
+  #header .menu .link_container a {
     text-decoration: none;
     margin: 0 10px;
     padding: 0 10px;
     border-radius: 20px;
     transition: 0.3s;
     transition-property: color, background;
-    font-family: Poppins;
+    font-family: Mark_pro;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 20px;
     line-height: 20px;
     color: #000000;
-}
+    margin-top: 20px;
+  }
 
-#header .menu .link_container a:hover {
-    color: #500480;
-}
-
-#header .btn {
-    color: #000;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-.apply_now_btn {
-    background: #0072b9 !important;
+  .apply_now_btn {
+    background: #b90000 !important;
     border-radius: 5px !important;
     padding: 10px 30px !important;
     color: #ffffff !important;
-    text-decoration: none;
-    font-size: 15px;
-    margin-right: 20px;
-}
-
-.contact_us_btn {
-    background: #ffffff !important;
-    border-radius: 5px !important;
-    padding: 10px 30px !important;
-    color: #0072b9 !important;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-@media (max-width: 1060px) {
-    #header {
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        /* // width: 100%; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 30px;
-        transition: 0.6s;
-        background: #ffffff;
-    }
-    #header.sticky {
-        background: #2c2f5b;
-        padding: 5px 10px;
-        padding-right: 20px;
-    }
-    #header.sticky a {
-        color: #000000 !important;
-        margin-top: 30px;
-    }
-    .imagelogo_container {
-        background: url(../images/assuredlogodark.svg);
-        /* // background-size: cover; */
-        background-position: center;
-        width: 168px;
-        height: 57px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        /* // width: 168px;
-        // height: 57px; */
-        background-repeat: no-repeat;
-        margin-top: 0px;
-    }
-
-    #header.sticky .imagelogo_container {
-        background: url(../images/Libertylogo.svg);
-        background-position: center;
-        background-size: contain;
-        /* // width: 168px;
-        // height: 57px; */
-        background-repeat: no-repeat;
-    }
-
-    #header .btn {
-        display: block;
-    }
-
-    #header .menu {
-        position: fixed;
-        background: #ececea;
-        flex-direction: column;
-        min-width: 300px;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        padding: 0px 50px;
-        transition: 0.5s;
-        transition-property: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    #header .menu.active {
-        right: 0;
-    }
-
-    #header .menu .close-btn {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 25px;
-        color: #000000be;
-    }
-
-    #header .menu a {
-        display: block;
-        font-size: 20px;
-        margin: 20px;
-        padding: 0 15px;
-        color: #000000be;
-    }
-    #header .menu .link_container a {
-        text-decoration: none;
-        margin: 0 10px;
-        padding: 0 10px;
-        border-radius: 20px;
-        transition: 0.3s;
-        transition-property: color, background;
-        font-family: Mark_pro;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 20px;
-        color: #000000;
-        margin-top: 20px;
-    }
-
-    .apply_now_btn {
-        background: #b90000 !important;
-        border-radius: 5px !important;
-        padding: 10px 30px !important;
-        color: #ffffff !important;
-    }
+  }
 }
