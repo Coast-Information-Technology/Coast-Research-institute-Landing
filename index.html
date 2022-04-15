@@ -22,111 +22,139 @@
   </head>
 
   <body>
-    <section class="section-main">
-      <header id="header">
-        <a href="https://coastresearchtechnology.com" class="brand">
-          <div class="imagelogo_container"></div>
-        </a>
-        <div class="menu">
-          <div class="btn">
-            <i class="fas fa-times close-btn"></i>
-          </div>
-          <div class="link_container">
-            <a href="/">Home</a>
-            <a href="#ourservices">Products</a>
-            <a href="#aboutus">About us</a>
-            <a href="/faq">FAQs</a>
-            <a href="#contact">Contact Us</a>
-          </div>
+    <!-- navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <figure class="logo">
+            <a href="/">
+              <img src="" alt="Logo for coast research technology" />
+            </a>
+          </figure>
 
-          <!-- <div class="login_container">
-                    <a href="pages/contactus.html" class="apply_now_btn">Apply Now</a>
-
-                </div> -->
-        </div>
-        <div class="btn">
-          <i class="fas fa-bars menu-btn"></i>
-        </div>
-      </header>
-
-      <div class="header_main_section">
-        <div class="content_main_lead">
-          <div class="header_text_section">
-            <h1>
-              Learn highly sought <br />
-              after tech skills <br />
-              without <span>Hassle</span>
-            </h1>
-            <p>
-              The past few years have seen a steady increase in the demand for
-              tech skills in the industry, passing out from the college or the
-              university will not guarantee you the technical know-how to get
-              you ready for the industry. <br />
-              At Coast Research Technology, you will actively acquire the
-              technical skills to get you ready for the industry and keep up
-              with its' evolving technologies
-            </p>
-            <a href="https://coastresearchtechnology1.netlify.app"
-              >Get started</a
-            >
+          <nav class="nav">
+            <ul>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#services">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQs</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="toggle">
+            <button class="toggle__button">
+              <i class="toggle__icon fas fa-times close-btn"></i>
+            </button>
+            <button class="toggle__button">
+              <i class="toggle__icon fas fa-bars menu-btn"></i>
+            </button>
           </div>
-
-          <div class="sub_section_lead">
-            <div class="sub_section_lead_card1">
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="description">
-                <p>
-                  Front end <br />
-                  Web Development
-                </p>
-              </div>
-            </div>
-            <div class="sub_section_lead_card2">
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="description">
-                <p>
-                  Back end <br />
-                  Web Development
-                </p>
-              </div>
-            </div>
-            <div class="sub_section_lead_card3">
-              <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="description">
-                <p>UI/UX Design</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header_image_section">
-          <img src="images/studentimg.svg" />
-        </div>
-        <div class="header_sociallink_section">
-          <div class="line"></div>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram-square"></i>
         </div>
       </div>
-    </section>
+    </header>
+
+    <!-- main content -->
+    <main class="main">
+      <div class="container">
+        <div class="main__container">
+          <div class="main__body">
+            <div class="content">
+              <h1 class="content__heading">
+                Learn highly sought <br />
+                after tech skills <br />
+                without <span class="highlight">Hassle</span>
+              </h1>
+              <p class="lead">
+                The past few years have seen a steady increase in the demand for
+                tech skills in the industry, passing out from the college or the
+                university will not guarantee you the technical know-how to get
+                you ready for the industry.
+              </p>
+              <p class="lead">
+                At Coast Research Technology, you will actively acquire the
+                technical skills to get you ready for the industry and keep up
+                with its' evolving technologies
+              </p>
+              <button
+                class="btn btn--primary"
+                href="https://coastresearchtechnology1.netlify.app"
+              >
+                Get started
+              </button>
+            </div>
+            <div class="ratings">
+              <div class="rating">
+                <div class="rating__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating__description">
+                  <p>
+                    Front end <br />
+                    Web Development
+                  </p>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating__description">
+                  <p>
+                    Back end <br />
+                    Web Development
+                  </p>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating__description">
+                  <p>UI/UX Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__figure">
+            <figure class="figure">
+              <img
+                src="images/studentimg.svg"
+                alt="Image of a female student smiling while holding her books to her chest"
+              />
+            </figure>
+          </div>
+          <div class="main__social">
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <section id="aboutus">
       <div class="sectioncardcontainer">
