@@ -138,12 +138,42 @@ body {
 }
 
 .toggle {
+  z-index: 99;
+  display: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle__button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(212, 111, 111);
+}
+
+.toggle__button.close {
+  display: none;
+}
+
+.toggle__button.open {
+  display: none;
+}
+
+.toggle__icon {
+}
+
+.toggle__button.close.active {
+  display: block;
+}
+
+.toggle__button.open.active {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .nav__wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 75vw;
@@ -165,6 +195,9 @@ body {
   }
 
   .toggle {
+    display: block;
+  }
+  .toggle__button.open {
     display: block;
   }
 }
