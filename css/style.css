@@ -74,12 +74,31 @@ html:focus-within {
   }
 }
 
-/*  */
+/* base styles */
 
 body {
   width: 100%;
-  height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
+
+.container {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
 .section-main {
   position: relative;
   width: 100%;
