@@ -347,5 +347,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const nav = document.querySelector(".nav__wrapper");
+      const openBtn = document.querySelector(".toggle__button.open");
+      const closeBtn = document.querySelector(".toggle__button.close");
+
+      openBtn.addEventListener("click", (e) => {
+        nav.classList.add("active");
+        openBtn.classList.add("active");
+        closeBtn.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", (e) => {
+        nav.classList.remove("active");
+        openBtn.classList.remove("active");
+        closeBtn.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
