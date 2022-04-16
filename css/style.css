@@ -210,6 +210,57 @@ body {
   }
 }
 
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main__wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  max-height: auto;
+  display: flex;
+}
+
+.main__body {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.content__heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.content__heading .highlight {
+  color: var(--color-primary);
+}
+
+/* TODO duplicate style */
+.content .lead {
+  max-width: 45ch;
+  color: var(--color-text-gray);
+}
+.main__figure {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.main__figure .figure {
+  width: 600px;
+  padding: 1rem;
+}
+
+.main__social {
+}
+
 .section-main {
   position: relative;
   width: 100%;
