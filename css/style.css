@@ -42,6 +42,7 @@ select {
   scroll-behavior: smooth;
   --color-dark: #35203b;
   --color-primary: #500480;
+  --color-text-gray: hsl(0, 0%, 25%);
 }
 
 *,
@@ -88,6 +89,11 @@ body {
   margin-inline: auto;
 }
 
+.lead {
+  max-width: 45ch;
+  margin-block: 1rem;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -119,6 +125,7 @@ body {
 .nav__item {
   text-align: center;
   margin-inline-start: 3rem;
+  margin-block: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -195,7 +202,6 @@ body {
 
   .nav__item {
     text-align: left;
-    margin-block: 1rem;
   }
 
   .nav__link {
