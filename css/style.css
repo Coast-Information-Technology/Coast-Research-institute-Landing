@@ -43,6 +43,7 @@ select {
   --color-dark: #35203b;
   --color-primary: #500480;
   --color-text-gray: hsl(0, 0%, 25%);
+  --bg-gradient: linear-gradient(90deg, #35203b -118.5%, #500480 100%);
 }
 
 *,
@@ -82,6 +83,20 @@ html:focus-within {
 body {
   width: 100%;
   font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  border: none;
+  min-width: 17px;
+  height: 54px;
+  padding: 14px 36px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn--primary {
+  background-image: var(--bg-gradient);
+  color: #fff;
 }
 
 .container {
@@ -233,7 +248,7 @@ body {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .content {
@@ -249,11 +264,11 @@ body {
   color: var(--color-primary);
 }
 
-/* TODO duplicate style */
 .content .lead {
   max-width: 45ch;
   color: var(--color-text-gray);
 }
+
 .main__figure {
   flex-basis: 50%;
   position: relative;
