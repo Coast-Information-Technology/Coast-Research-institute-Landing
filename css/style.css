@@ -415,3 +415,74 @@ body {
   font-weight: 600;
   color: var(--color-primary);
 }
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(97.08deg, #0e0325 5.27%, #160141 105.49%);
+}
+
+.footer__wrapper {
+  color: #fff;
+  display: flex;
+  min-height: 500px;
+  align-items: stretch;
+  padding-block-start: 3rem;
+  justify-content: space-between;
+}
+
+.footer__group {
+  flex: 0 1 250px;
+  font-weight: 300;
+  gap: 0 1rem;
+}
+
+.footer__heading,
+.footer__input-label,
+.footer__group .logo {
+  margin-block-end: 2.5rem;
+}
+.footer__heading {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer__item {
+  display: block;
+  margin-block-end: 2rem;
+}
+
+.footer__link {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-block-end: 1rem;
+}
+
+.footer__input-label {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.footer__input-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__input {
+  border: none;
+  height: 40px;
+  display: block;
+  flex: 1 1 245px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  padding-inline: 1rem;
+  padding-block: 0.85rem;
+  margin-block: 0.85rem;
+}
+
+.footer__input-btn {
+}
+
+.newsletter {
+}
