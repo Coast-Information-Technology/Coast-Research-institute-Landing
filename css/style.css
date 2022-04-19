@@ -342,7 +342,7 @@ body {
 .services {
   width: 100%;
   height: auto;
-  margin-block-end: 1rem;
+  margin-block-end: 2rem;
 }
 
 .about__header,
@@ -414,6 +414,63 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-primary);
+}
+
+.testimonial {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial__wrapper {
+  width: 100%;
+  min-height: 600px;
+  padding-block-start: 2rem;
+}
+
+.testimonial__header {
+  width: 100%;
+}
+
+.testimonial__heading {
+  font-size: 2rem;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.testimonial__body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.qoutecard {
+  width: 378px;
+  height: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7ff;
+}
+
+.qoutecard__figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.qoutecard__content {
+  text-align: center;
+  width: 36ch;
+  margin-block: 2rem;
+}
+
+.qoutecard__name {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-dark);
 }
 
 .footer {
