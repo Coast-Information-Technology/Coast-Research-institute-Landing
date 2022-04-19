@@ -486,3 +486,15 @@ body {
 
 .newsletter {
 }
+
+.footnote__wrapper {
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  border-block-start: 0.8px solid #ffffff;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
