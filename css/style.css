@@ -555,3 +555,20 @@ body {
   justify-content: space-between;
   font-weight: 400;
 }
+
+.back-to-top {
+  position:fixed;
+  bottom:100px;
+  right:100px;
+  width:44px;
+  height:44px;
+  padding:0.5rem;
+  background-color:transparent;
+  border: 1px solid #ffffff;
+  border-radius:4px;
+  background-image: linear-gradient(97.08deg, #0e0325 5.27%, #160141 105.49%);
+}
+
+.hidden {
+  display:none;
+}
