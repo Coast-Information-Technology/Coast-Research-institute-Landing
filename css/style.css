@@ -107,7 +107,7 @@ body {
 }
 
 .lead {
-  width: min(45ch,100%);
+  width: min(60ch,100%);
   margin-block: 1rem;
 }
 
@@ -424,7 +424,7 @@ body {
 }
 
 .about__content .lead {
-  max-width: min(66ch, 100%);
+  width: min(66ch, 100%);
 }
 
 .services__wrapper {
@@ -483,6 +483,7 @@ body {
 .testimonial {
   width: 100%;
   height: auto;
+  margin-block-end: 2rem;
 }
 
 .testimonial__wrapper {
@@ -507,6 +508,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .qoutecard {
@@ -515,7 +517,14 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #f4f7ff;
+}
+
+@media screen and (max-width:1024px){
+  .qoutecard{
+    margin-inline: auto;
+  }
 }
 
 .qoutecard__figure {
@@ -528,8 +537,9 @@ body {
 
 .qoutecard__content {
   text-align: center;
-  width: 36ch;
+  width: min(36ch, 100%);
   margin-block: 2rem;
+  font-size: 0.875rem;
 }
 
 .qoutecard__name {
