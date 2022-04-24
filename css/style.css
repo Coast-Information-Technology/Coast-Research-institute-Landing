@@ -380,6 +380,12 @@ body {
   }
 }
 
+@media screen and (max-width:520px) {
+  .main__figure .figure {
+    width:100%;
+    padding:0;
+  }
+}
 .main__social {
 }
 
