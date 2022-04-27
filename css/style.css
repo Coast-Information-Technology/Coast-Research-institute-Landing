@@ -551,6 +551,11 @@ body {
   padding-block-start: 2rem;
 }
 
+.quotecard__content .lead{
+  width:auto;
+  max-width: 60ch;
+}
+
 .quotecard__name {
   font-size: 0.875rem;
   color: var(--color-dark);
