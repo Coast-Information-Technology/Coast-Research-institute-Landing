@@ -610,6 +610,16 @@ body {
   gap:1rem;
 }
 
+.socials{
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  font-size: 18px;
+  color:#ffffff;
+  margin-inline: 1rem;
+}
 
 .footer__heading,
 .footer__input-label,
@@ -622,8 +632,12 @@ body {
 }
 
 .footer__item {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-block-end: 2rem;
+}
+.footer__item .bx{ 
+  margin-inline-end: 0.65rem;
 }
 
 .footer__link {
