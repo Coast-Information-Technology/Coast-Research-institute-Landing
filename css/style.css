@@ -427,7 +427,7 @@ body {
 .services {
   width: 100%;
   height: auto;
-  margin-block-end: 2rem;
+  margin-block: min(15vh, 20vh);
 }
 
 .about__header,
@@ -451,7 +451,7 @@ body {
   vertical-align: middle;
   filter: drop-shadow(0px 9px 18px rgba(0, 0, 0, 0.12));
 }
-  
+
 .about__wrapper {
   width: 100%;
   min-height: 600px;
@@ -530,7 +530,7 @@ body {
 .testimonial {
   width: 100%;
   height: auto;
-  margin-block-end: 2rem;
+  margin-block-end: 20vh;
 }
 
 .testimonial__wrapper {
@@ -555,7 +555,7 @@ body {
   height:auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   min-height: 500px;
   align-items: stretch;
   justify-content: space-between;
@@ -563,7 +563,7 @@ body {
 
 .quotecard{
   display: flex;
-  flex:1 1 378px;
+  flex:1 1 320px;
   background: #f4f7ff;
   display: flex;
   flex-direction: column;
@@ -684,12 +684,6 @@ body {
   padding-inline: 1rem;
   padding-block: 0.85rem;
   margin-block: 0.85rem;
-}
-
-.footer__input-btn {
-}
-
-.newsletter {
 }
 
 @media screen and (max-width:920px) {
