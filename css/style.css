@@ -241,6 +241,16 @@ body {
 .main {
   width: 100%;
   height: auto;
+  position: relative;
+  background-image:url("../images/kite.png");
+  background-repeat: no-repeat;
+  background-position: 37% 0%;
+}
+
+@media  screen and (max-width:1024px) {
+  .main{
+    background-image: none;
+  }
 }
 
 .main__wrapper {
