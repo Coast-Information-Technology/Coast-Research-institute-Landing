@@ -324,6 +324,13 @@ body {
   z-index: 34;
 }
 
+@media screen and(max-width:768px) {
+  .rating__body{
+    padding-inline-start: 0;
+    padding-inline-end: 1rem;
+  }
+}
+
 .rating__body .stars {
 }
 
