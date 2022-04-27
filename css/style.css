@@ -302,6 +302,18 @@ body {
   position: relative;
 }
 
+.rating-bg-1{
+  background-image: url("../images/1129.png");
+}
+
+.rating-bg-2{
+  background-image: url("../images/1130.png");
+}
+
+.rating-bg-3{
+  background-image: url("../images/1133.png");
+}
+
 .rating__figure::after {
   content: "";
   width: 100%;
