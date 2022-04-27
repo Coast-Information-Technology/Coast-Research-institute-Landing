@@ -548,8 +548,17 @@ body {
   align-items: center;
   justify-content: center;
   padding:2rem 1rem;
-  background-color: #cbcbcb;
+  background-color: #F4F7FF;
   border-radius: 8px;
+}
+
+.quotecard--active{
+  background-color:#35203B;
+  color:#ffffff;
+}
+
+.quotecard--active .quotecard__name {
+  color:#ffffff;
 }
 
 .quotecard__figure {
