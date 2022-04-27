@@ -272,6 +272,8 @@ body {
 
 .content__heading .highlight {
   color: var(--color-primary);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
 }
 
 .content .lead {
