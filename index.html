@@ -1,255 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicons -->
-    <link href="images/favicon.png" rel="icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.png" rel="icon" />
     <title>Coast Research Technology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f45c9cae8f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <section class="section-main">
-        <header id="header">
-            <a href="https://coastresearchtechnology.com" class="brand">
-                <div class="imagelogo_container">
-                </div>
+  <body>
+    <!-- navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <figure class="logo">
+            <a href="/">
+              <img
+                src="./images/coastresearch.svg"
+                alt="Logo for coast research technology"
+              />
             </a>
-            <div class="menu">
-                <div class="btn">
-                    <i class="fas fa-times close-btn"></i>
-                </div>
-                <div class="link_container">
-                    <a href="/">Home</a>
-                    <a href="#ourservices">Products</a>
-                    <a href="#aboutus">About us</a>
-                    <a href="/faq">FAQs</a>
-                    <a href="#contact">Contact Us</a>
-                </div>
+          </figure>
 
-                <!-- <div class="login_container">
-                    <a href="pages/contactus.html" class="apply_now_btn">Apply Now</a>
-
-                </div> -->
-
-            </div>
-            <div class="btn">
-                <i class="fas fa-bars menu-btn"></i>
-            </div>
-        </header>
-
-        <div class="header_main_section">
-            <div class="content_main_lead">
-                <div class="header_text_section">
-                    <h1>Learn highly sought <br />
-                        after tech skills <br />
-                        without <span>Hassle</span></h1>
-                    <p>The past few years have seen a steady increase in the demand for tech skills in the industry,
-                         passing out from the college or the university will not guarantee you the technical know-how 
-                         to get you ready for the industry. <br>
-                        At Coast Research Technology, you will actively acquire the technical skills to get you ready
-                         for the industry and keep up with its' evolving technologies</p>
-                    <a href="https://coastresearchtechnology1.netlify.app">Get started</a>
-                </div>
-
-                <div class="sub_section_lead">
-                    <div class="sub_section_lead_card1">
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="description">
-                            <p>Front end <br />
-                                Web Development</p>
-                        </div>
-                    </div>
-                    <div class="sub_section_lead_card2">
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="description">
-                            <p>Back end <br />
-                                Web Development</p>
-                        </div>
-                    </div>
-                    <div class="sub_section_lead_card3">
-                        <div class="ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="description">
-                            <p>UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header_image_section">
-                <img src="images/studentimg.svg" />
-            </div>
-            <div class="header_sociallink_section">
-                <div class="line"></div>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram-square"></i>
-            </div>
+          <nav class="nav">
+            <ul class="nav__wrapper">
+              <li class="nav__item">
+                <a class="nav__link" href="/">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#services">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">FAQs</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="toggle">
+            <button class="toggle__button close">
+              <i class="toggle__icon bx bx-x close-btn"></i>
+            </button>
+            <button class="toggle__button open">
+              <i class="toggle__icon bx bx-menu menu-btn"></i>
+            </button>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <div class="main__body">
+            <div class="content">
+              <h1 class="content__heading">
+                Learn highly sought after tech skills without <span class="highlight">Hassle</span>
+              </h1>
+              <p class="lead">
+                The past few years have seen a steady increase in the demand for
+                tech skills in the industry, passing out from the college or the
+                university will not guarantee you the technical know-how to get
+                you ready for the industry.
+              </p>
+              <p class="lead">
+                At Coast Research Technology, you will actively acquire the
+                technical skills to get you ready for the industry and keep up
+                with its' evolving technologies
+              </p>
+              <button
+                class="btn btn--primary"
+                href="https://coastresearchtechnology1.netlify.app"
+              >
+                Get started
+              </button>
+            </div>
+            <div class="ratings">
+              <div class="rating">
+                <figure class="rating__figure rating-bg-1"></figure>
+                <div class="rating__body">
+                  <div class="stars">
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Front end <br />
+                      Web Development
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rating">
+                <figure class="rating__figure rating-bg-2"></figure>
+                <div class="rating__body">
+                  <div class="stars">
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Back end <br />
+                      Web Development
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="rating">
+                <figure class="rating__figure rating-bg-3"></figure>
+                <div class="rating__body">
+                  <div class="stars">
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                    <i class="bx bxs-star star"></i>
+                  </div>
+                  <div class="description">
+                    <p>UI/UX Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__figure">
+            <figure class="figure">
+              <img
+                src="images/studentimg.svg"
+                alt="Image of a female student smiling while holding her books to her chest"
+              />
+            </figure>
+            <div class="main__social">
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- about section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__header">
+            <h2 class="about__heading"> 
+              <img class="graphic" src="./images/heading_polygon.png" alt="">  About Us
+            </h2>
+          </div>
+          <article class="about__content">
+            <p class="lead">
+              Coast Research Technology is an outstanding and emerging ICT giant
+              in Africa, creating groundbreaking technological solutions. Since
+              2021, it has consistently helped all of its ever joyous clients (
+              both individual and corporate bodies) to bring their dream
+              solutions to reality. Having the best team of idea-to-solution
+              creators has helped position them as an authority within the tech
+              industry, especially when it comes to creating groundbreaking
+              solutions backed by innovative thinking and visionary map work.
+            </p>
+            <p class="lead">
+              With our amiable classrooms and adepts trainers packing years of practical and theoretical experiences,
+                    our training center has since 2020, seen brilliant IT prodigies walk through our doors to get the technical
+                     skills needed in different IT fields, where they are currently using these skills to collaborate with 
+                     other great minds both within the country and globally
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="aboutus">
-        <div class="sectioncardcontainer">
-            <div class="sectioncardcontent">
-                <div class="sectioncardcontent_header">
-                    <img src="images/polugonimg.svg" />
-                    <h1>About Us</h1>
-                </div>
-                <div class="sectioncardcontent_text">
-                    <p>Coast Research Technology is an outstanding and emerging ICT giant in Africa,
-                         creating groundbreaking technological solutions. Since 2021, it has consistently
-                          helped all of its ever joyous clients ( both individual and corporate bodies) 
-                          to bring their dream solutions to reality.
-
-                        Having the best team of idea-to-solution creators has helped position them as an authority 
-                        within the tech industry, especially when it comes to creating groundbreaking solutions backed by 
-                        innovative thinking and visionary map work. <br><br> 
-                    Our training center has since 2020, seen brilliant IT prodigies walk through our doors to acquire the technical skills
-                    needed in different IT fields. where they are using these skills to collaborate with other great minds locally and internationally</p>
-                </div>
+    <!-- services section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <div class="services__header">
+            <h2 class="services__heading">
+              <img class="graphic" src="./images/heading_polygon.png" alt=""> Our Services</h2>
+          </div>
+          <div class="services__cards">
+            <div class="card">
+              <div class="card__header">
+                <h3 class="card__heading">Research and App Development</h1>
+              </div>
+              <div class="card__body">
+                <p>
+                  We specialize in developing complex, sophisticated software
+                  that will help you digitally transform your business and the
+                  industry. Get world-class enterprise engineering, design and
+                  technology, consulting services to automate your business
+                  processes, soar your operations and customer service
+                </p>
+              </div>
+               <a
+                  class="btn btn--primary"
+                  href="https://coastresearchtechnology2.netlify.app"
+                  >Learn more</a
+                >
             </div>
+            <div class="card">
+              <div class="card__header">
+                <h3 class="card__heading">
+                  Skill acquisition and career growth
+                </h3>
+              </div>
+              <div class="card__body">
+                <p>
+                  Are you tired of learning outdated technologies? Are you tired
+                  of learning with outdated course materials? Do you need
+                  practical training on the latest IT technologies? <br />
+                  Taking a decision on the right place to train yourself or your
+                  staff can be very vital for your career or the future of your
+                  organization.
+                </p>
+              </div>
+               <a
+                  class="btn btn--primary"
+                  href="https://coastresearchtechnology2.netlify.app"
+                  >Learn more</a
+                >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="ourservices">
-        <div class="servicescardcontent_header">
-            <img src="images/polugonimg.svg" />
-            <h1>Our Services</h1>
-        </div>
-        <div class="services_content_card_container">
-            <div class="services_content_card1">
-                <div class="services_content_card_header">
-                    <img src="images/doulepolygon.svg" />
-                    <h1>Research and App Development</h1>
-                </div>
-                <div class="services_content_card_text">
-                    <p>We specialize in developing complex, sophisticated software that will help you digitally transform
-                         your business and the industry. Get world-class enterprise engineering, design and technology,
-                         consulting services to automate your business processes, soar your operations and customer service</p>
-                    <a href="https://coastresearchtechnology1.netlify.app">Learn more</a>
-                </div>
+    <!-- testimonial section -->
+    <section id="testimonial" class="testimonial">
+      <div class="container">
+        <div class="testimonial__wrapper">
+          <div class="testimonial__header">
+            <h2 class="testimonial__heading">Testimonials</h2>
+          </div>
+          <div class="testimonial__body">
+           
+            <div class="quotecard">
+              <div class="quotecard__icon">
+                <img src="./images/qoutes.png" alt="a qoute icon">
+              </div>
+              <div class="quotecard__content">
+                <p class="lead">Awesome company, Innovative and Fun to work with. The services
+                they provide are top tier.</p>
+              </div>
+              <figure class="quotecard__figure">
+                <img class="quotecard__image" src="./images/596.png" />
+              </figure>
+
+              <div class="quotecard__name">Joshua Emmanuel</div>
             </div>
-            <div class="services_content_card2">
-                <div class="services_content_card_header">
-                    <img src="images/doulepolygon.svg" />
-                    <h1>Skill acquisition
-                        and career growth</h1>
-                </div>
-                <div class="services_content_card_text">
-                    <p>Are you tired of learning outdated technologies? Are you tired of learning with outdated course materials?
-                        Do you need practical training on the latest IT technologies? <br> Taking a decision on the right place to train
-                        yourself or your staff can be very vital for your career or the future of your organization.</p>
-                    <a href="https://coastresearchtechnology2.netlify.app">Learn more</a>
-                </div>
+             <div class="quotecard quotecard--active">
+              <div class="quotecard__icon">
+                <img src="./images/qoutes.png" alt="a qoute icon">
+              </div>
+              <div class="quotecard__content">
+                <p class="lead">
+                  A friend recommend them to me and I have not been disappointed,
+                  very accurate, Coast Research Technology is the best for you, I
+                  am recommending them to you and a trial will convince you. Kudos
+                  to the tech team, God bless you and more wisdom
+                </p>
+              </div>
+              <figure class="quotecard__figure">
+                <img src="./images/595.png" />
+              </figure>
+
+              <div class="quotecard__name">Onafuwa Segun</div>
             </div>
+            <div class="quotecard">
+              <div class="quotecard__icon"> 
+                <img src="./images/qoutes.png" alt="a qoute icon">
+              </div>
+              <div class="quotecard__content">
+                <p> The website came out great and they completed the project
+                earlier than expected.</p>
+              </div>
+              <figure class="quotecard__figure">
+                <img src="./images/597.png" />
+              </figure>
+
+              <div class="quotecard__name">Edwin Giwa</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="testimonial_section">
-        <div class="servicescardcontent_header">
-            <img src="images/polugonimg.svg" />
-            <h1>Testimonials</h1>
-        </div>
-        <div class="testimonial_cards_container">
-            <div class="testimonial_card1">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>A friend recommend them to me and I have not been disappointed, very accurate,
-                     Coast Research Technology is the best for you, I am recommending them to you and a trial 
-                     will convince you. Kudos to the tech team, God bless you and more wisdom </p>
-                <img src="images/testimonialImages1.svg" />
-                <h2>Onafuwa Segun</h2>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__group">
+            <div class="logo">
+              <img src="images/footer_logo.svg" />
             </div>
-            <div class="testimonial_card2">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>Awesome company, Innovative and Fun to work with. The services they provide are top tier. </p>
-                <img src="images/testimonialImages1.svg" />
-                <h2>Joshua Emmanuel</h2>
-            </div>
-            <div class="testimonial_card3">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>The website came out great and they completed the project earlier than expected.</p>
-                <img src="images/testimonialImages1.svg" />
-                <h2>Edwin Giwa</h2>
-            </div>
-        </div>
-    </section>
+            <div class="socials">
+              <p>Follow Us</p>
 
-
-    <footer>
-        <div class="footer_wrapper">
-            <div class="logo_socials">
-                <div class="logo">
-                    <img src="images/footer_logo.svg" />
-                </div>
-                <div class="socials">
-                    <p>Follow Us</p>
-
-                    <div class="social_links">
-                        <a href="https://www.facebook.com/coastechy/"><i class="fa-brands fa-facebook-f"></i></a>
-                        <i class="fa-brands fa-twitter"></i>
-                        <a href="https://instagram.com/coastechy?utm_medium=copy_link"><i
-                                class="fa-brands fa-instagram-square"></i></a>
-                    </div>
-                </div>
+              <div class="social__links">
+                <a
+                  class="social__link"
+                  href="https://www.facebook.com/coastechy/"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <a class="social__link" href="#">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <a
+                  class="social__link"
+                  href="https://instagram.com/coastechy?utm_medium=copy_link"
+                >
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+              </div>
             </div>
-            <div class="company">
-                <p>Company</p>
-                <ul>
-                    <li><a href="#aboutus">- About</a></li>
-                    <li><a href="#ourservices">- Services</a></li>
-                    <li><a href="#contact"> - Contact </a></li>
-                </ul>
+          </div>
+          <div id="company" class="footer__group">
+            <h3 class="footer__heading">Company</h3>
+           <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#services">Services</a>
+            <a class="footer__link" href="#contact">Contact </a>
+          </div>
+          <div id="contact" class="footer__group">
+            <h3 class="footer__heading">Contact</h3>
+            <div class="footer__item">
+              <i class="bx bxs-location"></i><span> 2nd Floor Patmodit House,
+              Olopomewa Bus Stop, Ibadan-Poly Road, 200282, Ibadan Nigeria</span>
             </div>
-            <div id="contact">
-                <p>Contact</p>
-                <ul>
-                    <li><i class="fa-solid fa-location-pin"></i> 2nd Floor Patmodit House, Olopomewa Bus Stop,
-                        Ibadan-Poly Road, 200282, Ibadan Nigeria</li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>help@coastresearchtechnology.com
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>2349123935447, 2348132393438
-                    </li>
-                </ul>
+            <div class="footer__item">
+              <i class="bx bxs-envelope"></i><span> help@coastresearchtechnology.com</span>
             </div>
-            <div class="newsletter">
-                <p>Subscribe to our Newsletter</p>
-                <div class="input_container">
-                    <input type="email" placeholder="Enter your email" />
-                    <button>Subscribe</button>
-                </div>
+            <div class="footer__item">
+              <i class="bx bxs-contact"></i><span> +2349123935447, +2348132393438 </span>
             </div>
+          </div>
+          <form class="newsletter">
+            <label class="footer__input-label" for="newsletter">Subscribe to our Newsletter</label>
+            <div class="footer__input-group">
+            <input
+              id="newsletter"
+              name="newsletter"
+              type="email"
+              class="footer__input"
+              placeholder="Enter your email"
+            />
+            <button class=" footer__input-btn btn btn--primary" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
+        <div class="footnote__wrapper">
+          <p>All rights reserved. &copy; Coast Research Technology</p><p>Privacy Policy</p><p>Terms & Conditions</p>
+        </div>
+      </div>
+      <button class="back-to-top hidden">
+        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.9688 9.21875L9 0.78125L1.03125 9.21875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      <button>
     </footer>
-</body>
 
+    <script>
+      const nav = document.querySelector(".nav__wrapper");
+      const openBtn = document.querySelector(".toggle__button.open");
+      const closeBtn = document.querySelector(".toggle__button.close");
+      const backToTopBtn = document.querySelector(".back-to-top");
+
+      const SCROLL_VALUE = 100;
+
+      document.addEventListener('scroll',()=>{
+        if(window.scrollY > SCROLL_VALUE){
+          backToTopBtn.classList.remove("hidden");
+        } else {
+          backToTopBtn.classList.add("hidden");
+        }
+      });
+
+      backToTopBtn.addEventListener("click",()=>{
+        document.body.scrollIntoView();
+      });
+
+      openBtn.addEventListener("click", (e) => {
+        nav.classList.add("active");
+        openBtn.classList.add("active");
+        closeBtn.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", (e) => {
+        nav.classList.remove("active");
+        openBtn.classList.remove("active");
+        closeBtn.classList.remove("active");
+      });
+    </script>
+  </body>
 </html>
