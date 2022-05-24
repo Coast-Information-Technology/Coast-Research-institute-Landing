@@ -190,6 +190,7 @@ body {
 }
 
 .toggle__icon {
+  font-size: 30px;
 }
 
 .toggle__button.close.active {
