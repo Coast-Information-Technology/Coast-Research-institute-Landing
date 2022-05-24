@@ -696,8 +696,8 @@ body {
     flex: 0 1 180px;
   }
 
-  .footer__item {
-    margin-block-end: 0.5rem;
+  .footer__item .email {
+    font-size: 14px;
   }
 
   .footer__heading,
