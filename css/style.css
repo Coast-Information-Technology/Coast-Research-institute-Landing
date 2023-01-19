@@ -1,5 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+/* Table of Content */
 
+/* 1.   Global variables*/
+
+/* 2.   Basic resets */
+
+/* 3.   Utility Classes */
+
+/* 4.   General styling */
+
+/* Table of Content ends*/
+
+/****************************************************************************************************************/ /****************************************************************************************************************/
+/****************************************************************************************************************/
+/****************************************************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+/* 
 @font-face {
   font-family: jacquespro;
   src: url(/fonts/JacquesPro-Bold.woff);
@@ -29,7 +45,27 @@
   font-family: jacquespro;
   src: url(/font/JacquesPro-Regular.woff);
   font-weight: 400;
+} */
+
+/* 1.   Global variables*/
+:root {
+  scroll-behavior: smooth;
+  --color-dark: #35203b;
+  --color-primary: #500480;
+  --color-text-gray: hsl(0, 0%, 25%);
+  --bg-gradient: linear-gradient(
+    90deg,
+    #35203b -118.5%,
+    var(--color-primary) 100%
+  );
 }
+/* 1.   Global variables ends */
+
+/****************************************************************************************************************/
+/****************************************************************************************************************/
+/****************************************************************************************************************/
+
+/* 2.   Basic resets */
 
 /* Resets */
 *,
@@ -37,14 +73,34 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+
+/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+/* Remove all underline decoration from anchor tags */
+a {
+  text-decoration: none;
 }
 img,
 picture {
@@ -55,33 +111,11 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  border: 0;
+  line-height: 0;
 }
 
-:root {
-  scroll-behavior: smooth;
-  --color-dark: #35203b;
-  --color-primary: #500480;
-  --color-text-gray: hsl(0, 0%, 25%);
-  --bg-gradient: linear-gradient(90deg, #35203b -118.5%, #500480 100%);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-size: 16px;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
+/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   :root {
     scroll-behavior: auto;
@@ -98,7 +132,7 @@ html:focus-within {
   }
 }
 
-/* base styles */
+/* 3.   Utility Classes*/
 
 body {
   width: 100%;
@@ -112,7 +146,6 @@ body {
   padding: 14px 36px;
   cursor: pointer;
   border-radius: 8px;
-  text-decoration: none;
   display: inline-block;
 }
 
@@ -173,7 +206,6 @@ body {
 
 .nav__link {
   font-weight: 500;
-  text-decoration: none;
   color: var(--color-dark);
   transition: color 500ms ease;
 }
@@ -681,7 +713,6 @@ body {
 .footer__link {
   color: #fff;
   display: block;
-  text-decoration: none;
   margin-block-end: 1rem;
 }
 
