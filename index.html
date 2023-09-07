@@ -5,7 +5,17 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="images/favicon.png" rel="icon" />
+
+    <meta name="description" content="Coast Research Technology: Leading Software Development and Training Experts.
+     Learn coding, latest information technology, software engineering, and more with our comprehensive training programs.
+      We provide top-notch consultancy services for software solutions.
+       Join us to enhance your tech skills and business success to build a successful tech career." />
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
     <title>Top Software company | Best Tech Training school - Coast Research Technology</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -24,8 +34,8 @@
             </a>
           </figure>
 
-          <nav class="nav" id="primary-navigation">
-            <ul role="list" class="nav__wrapper">
+          <nav class="nav" id="primary-navigation" aria-hidden="true" aria-label="primary-navigation">
+            <ul role="list" class="nav__wrapper" aria-label="navbar">
               <li class="nav__item">
                 <a class="nav__link" href="/">Home</a>
               </li>
@@ -43,14 +53,23 @@
               </li>
             </ul>
           </nav>
-          <div class="toggle">
+
+          <!-- ***** Hamburger  ***** --> 
+          <button class='primary-navigation-toggle' aria-controls="primary-navigation" aria-expanded="false" aria-label="primary-navigation-toggle">
+            <span>Menu</span>
+          </button>
+          <!-- ***** Hamburger End ***** --> 
+
+
+          <!-- <div class="toggle">
             <button class="toggle__button close">
               <i class="toggle__icon bx bx-x close-btn"></i>
             </button>
             <button class="toggle__button open">
               <i class="toggle__icon bx bx-menu menu-btn"></i>
             </button>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </header>
@@ -256,14 +275,13 @@
                 <img src="./images/qoutes.png" alt="a qoute icon">
               </div>
               <div class="quotecard__content">
-                <p class="lead">Awesome company, Innovative and Fun to work with. The services
-                they provide are top tier.</p>
+                <p class="lead">A great software development company, they have a very nice learning environment, great tutors and their services are top notch and very professional.</p>
               </div>
               <figure class="quotecard__figure">
-                <img class="quotecard__image" src="./images/596.png" />
+                <img class="quotecard__image" src="./images/lawal_abdulateef.png" alt="lawal abdulateef"/>
               </figure>
 
-              <div class="quotecard__name">Joshua Emmanuel</div>
+              <div class="quotecard__name">Lawal Abdulateef</div>
             </div>
              <div class="quotecard quotecard--active">
               <div class="quotecard__icon">
@@ -278,24 +296,25 @@
                 </p>
               </div>
               <figure class="quotecard__figure">
-                <img src="./images/595.png" />
+                <img src="./images/etcetera_ejikeme.jpeg" alt="Etcetera Ejikeme" />
               </figure>
 
-              <div class="quotecard__name">Onafuwa Segun</div>
+              <div class="quotecard__name">Etcetera Ejikeme</div>
             </div>
             <div class="quotecard">
               <div class="quotecard__icon"> 
                 <img src="./images/qoutes.png" alt="a qoute icon">
               </div>
               <div class="quotecard__content">
-                <p> The website came out great and they completed the project
-                earlier than expected.</p>
+                <p> If you are looking for a software development company in Ibadan to explore into Tech career,
+                   Coast Research Technology Ibadan is the best option for you to make.
+                   They are highly skilled in solving real life problems, I bet you, a trial today might convince you.</p>
               </div>
               <figure class="quotecard__figure">
-                <img src="./images/597.png" />
+                <img src="./images/segun_joseph.png" alt="Segun Joseph" />
               </figure>
 
-              <div class="quotecard__name">Edwin Giwa</div>
+              <div class="quotecard__name">Segun Joseph</div>
             </div>
           </div>
         </div>
@@ -341,13 +360,22 @@
           <div id="contact" class="footer__group">
             <h3 class="footer__heading">Contact</h3>
             <div class="footer__item">
-              <i class="bx bxs-location"></i><span> 7, Adegboyega Close, Olopomewa Bus Stop, off Sango Eleyele Road, 200282, Ibadan, Oyo State, Nigeria</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M12.71 2.29a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42A1 1 0 0 0 3 13h1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1a1 1 0 0 0-.29-.71zM6 20v-9.59l6-6l6 6V20z"/>
+              </svg>
+              <span>7, Adegboyega Close, Olopomewa Bus Stop, off Sango Eleyele Road, 200282, Ibadan, Oyo State, Nigeria</span>
             </div>
             <div class="footer__item">
-              <i class="bx bxs-envelope"></i><span> hello@coastresearchtechnology.com</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223l-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044L20.002 18H4z"/>
+              </svg>
+              <span> hello@coastresearchtechnology.com.ng</span>
             </div>
             <div class="footer__item">
-              <i class="bx bxs-contact"></i><span> +2348072991328, +2348132393438 </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59a7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43A15.28 15.28 0 0 0 6.3 17.7A15.28 15.28 0 0 0 16.57 22zM6 5.41L8.59 8L7.3 9.29a1 1 0 0 0-.3.91a10.12 10.12 0 0 0 2.3 4.5a10.08 10.08 0 0 0 4.5 2.3a1 1 0 0 0 .91-.27L16 15.41L18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z"/><path fill="currentColor" d="M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5z"/>
+              </svg>
+            <span>2348072991328 </span>
             </div>
           </div>
           <form class="newsletter">
@@ -376,9 +404,8 @@
     </footer>
 
     <script>
-      const nav = document.querySelector(".nav__wrapper");
-      const openBtn = document.querySelector(".toggle__button.open");
-      const closeBtn = document.querySelector(".toggle__button.close");
+      const toggleButton = document.querySelector('.primary-navigation-toggle');
+      const navbar = document.querySelector(".nav__wrapper");
       const backToTopBtn = document.querySelector(".back-to-top");
 
       const SCROLL_VALUE = 100;
@@ -395,17 +422,43 @@
         document.body.scrollIntoView();
       });
 
-      openBtn.addEventListener("click", (e) => {
-        nav.classList.add("active");
-        openBtn.classList.add("active");
-        closeBtn.classList.add("active");
-      });
+      // openBtn.addEventListener("click", (e) => {
+      //   nav.classList.add("active");
+      //   openBtn.classList.add("active");
+      //   closeBtn.classList.add("active");
+      // });
 
-      closeBtn.addEventListener("click", (e) => {
-        nav.classList.remove("active");
-        openBtn.classList.remove("active");
-        closeBtn.classList.remove("active");
-      });
+      // closeBtn.addEventListener("click", (e) => {
+      //   nav.classList.remove("active");
+      //   openBtn.classList.remove("active");
+      //   closeBtn.classList.remove("active");
+      // });
+
+      
+/* primary-navigation-toggle idea 2 */
+
+// Menu Dropdown Toggle
+if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+        toggleButton.classList.toggle('active');
+        const headerNav = document.querySelector('.nav__wrapper');
+        headerNav.classList.toggle('active');
+
+        // Toggle the 'aria-expanded' attribute on the button
+        const expanded = toggleButton.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+        toggleButton.setAttribute('aria-expanded', expanded);
+
+        // Toggle the 'aria-hidden' attribute on the navbar
+        const hidden = navbar.getAttribute('aria-hidden') === 'true' ? 'false' : 'true';
+        navbar.setAttribute('aria-hidden', hidden);
+
+    });
+}
+
+/* primary-navigation-toggle idea 2 end */
+
+
+
     </script>
   </body>
 </html>
